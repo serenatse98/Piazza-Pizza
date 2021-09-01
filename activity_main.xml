@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="orderButton"
+        android:text="Order"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="menuButton"
+        android:text="Menu"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrder" />
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="historyButton"
+        android:text="History"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEditHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu" />
+
+    <Button
+        android:id="@+id/buttonEditHistory"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="editHistoryButton"
+        android:text="Edit History"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHistory" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="126dp"
+        android:onClick="aboutButton"
+        android:text="About"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEditHistory" />
+
+</android.support.constraint.ConstraintLayout>

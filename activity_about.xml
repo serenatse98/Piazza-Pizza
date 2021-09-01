@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/textViewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="About Piazza Pizza"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=
+            "\t\tPiazza Pizza was created in 2019 by two Java students
+who should have started on this project sooner than they did :(
+Now they are struggling lol. But we finished and are very proud
+of our creation. Many hours hard work :) \n\n
+
+
+  Firebase Database: \n\t\t\thttps://piazzapizza-8a7a0.firebaseio.com/" />
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        app:srcCompat="@drawable/pizza5" />
+
+    <TextView
+        android:id="@+id/textViewyay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="    Creators: \n    Jenny Xie Ng (60748939), Serena Tse (21907178)
+            \n    © ICS 45J Winter 2019" />
+</LinearLayout>
